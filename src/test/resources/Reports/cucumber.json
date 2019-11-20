@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-11-18T07:11:32.404Z",
+        "line": 3,
+        "name": "Login Validation",
+        "description": "",
+        "id": "validation-of-facebook-details;login-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18259062200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on FaceBook Page",
+            "match": {
+              "location": "StepDefination.user_is_on_FaceBook_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2797761700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters Registrtion Detais",
+            "match": {
+              "location": "StepDefination.user_enters_Registrtion_Detais(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Logan",
+                  "Woverine",
+                  "logan@gmail.com",
+                  "wolverinexmen"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201340500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Verifies the Succces Message",
+            "match": {
+              "location": "StepDefination.user_Verifies_the_Succces_Message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.steps.StepDefination.quit_the_Browser(StepDefination.java:101)\r\n\tat ✽.Quit the Browser(file:src/test/resources/Feature/Login.feature:9)\r\n",
+              "duration": 5003198399,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Quit the Browser",
+            "match": {
+              "location": "StepDefination.quit_the_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Facebook details",
+    "description": "",
+    "id": "validation-of-facebook-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/Login.feature",
+    "tags": []
+  }
+]
